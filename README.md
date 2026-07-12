@@ -1,16 +1,49 @@
-# React + Vite
+# Mariam Badhib Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio website showcasing my work as a Frontend Developer and UI/UX Designer.
 
-Currently, two official plugins are available:
+## About
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This portfolio highlights my experience, technical skills, and selected projects in web and mobile development. It was built to demonstrate my expertise in creating responsive, user-centered digital experiences.
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Responsive design
+- Modern and clean user interface
+- Projects showcase
+- Skills and technologies
+- About Me section
+- Contact section
 
-## Expanding the ESLint configuration
+## Built With
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Vite
+- Tailwind CSS
+- JavaScript
+- HTML5
+- CSS3
+
+## Live Demo
+
+🔗 Add your portfolio link here
+
+## Installation
+
+```bash
+git clone https://github.com/yourusername/portfolio.git
+
+cd portfolio
+
+npm install
+
+npm run dev
+```
+
+## Author
+
+**Mariam Abdulrahman Badhib**
+
+Frontend Developer | UI/UX Designer
+
+Email: mariabdoh@gmail.com

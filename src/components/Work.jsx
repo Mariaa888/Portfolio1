@@ -22,7 +22,7 @@ export default function ProjectsSection() {
       {/* Main Container for the Vertical Strips */}
       <div className="flex w-full max-w-[1450px] mx-auto h-[400px] gap-1 px-4 mt-12">
         {projects.map((project, index) => {
-          const isComingSoon = project.id === 'factory-flow';
+          const isComingSoon = false;
           return (
             <motion.div
               key={project.id}
@@ -55,13 +55,7 @@ export default function ProjectsSection() {
                   </div>
                 )}
 
-                {isComingSoon && (
-                  <div className="absolute inset-0 z-20 flex items-center justify-center bg-stone-200/50 backdrop-blur-[2px] border border-dashed border-stone-300">
-                    <span className="text-xs font-bold tracking-widest text-stone-500 uppercase italic">
-                      Coming Soon
-                    </span>
-                  </div>
-                )}
+              
 
                 {/* Large Number at the background of strip */}
                 <div className="absolute bottom-4 inset-x-0 flex justify-center items-end pointer-events-none z-30">

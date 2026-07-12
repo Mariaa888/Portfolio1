@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowLeft, ChevronRight, ExternalLink } from 'lucide-react';
+import { ArrowLeft, ExternalLink } from 'lucide-react';
 import { projects } from '../data/projects';
 
 export default function CaseStudy() {
@@ -121,15 +121,7 @@ export default function CaseStudy() {
           </div>
 
           <div className="space-y-8">
-            <div className="p-8 bg-stone-50 border border-stone-100 rounded-sm">
-              <h4 className="text-xs font-black tracking-widest text-stone-400 uppercase mb-4">Next Project</h4>
-              <div className="group cursor-pointer">
-                <h3 className="text-xl font-bold mb-2 group-hover:text-pink-400 transition-colors">Agoda Redesign</h3>
-                <button className="flex items-center gap-2 text-xs font-black tracking-widest uppercase">
-                  View Project <ChevronRight size={14} />
-                </button>
-              </div>
-            </div>
+
             {/* Smart Buttons — shown based on available links */}
             {(project.link || project.githubLink) && (
               <div className={`flex gap-3 ${project.link && project.githubLink ? '' : ''}`}>

@@ -1,7 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.id]: e.target.value
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const { name, email, message } = formData;
+    const subject = encodeURIComponent(`Portfolio Inquiry from ${name}`);
+    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+    window.location.href = `mailto:mariabdoh@gmail.com?subject=${subject}&body=${body}`;
+  };
+
   return (
     <div className="min-h-screen bg-[#1A1A1A] text-[#FAF9F6] flex flex-col justify-center px-4 py-16 md:px-12 lg:px-24 relative overflow-hidden">
       {/* Decorative Elements */}
@@ -51,7 +72,7 @@ export default function Contact() {
           >
             <div>
               <p className="text-stone-500 text-xs font-bold tracking-widest uppercase mb-1">Email</p>
-              <a href="mailto:mariabdoh@gmail.com" className="text-xl hover:text-pink-400 transition-colors duration-300">hello@example.com</a>
+              <a href="mailto:mariabdoh@gmail.com" className="text-xl hover:text-pink-400 transition-colors duration-300">mariabdoh@gmail.com</a>
             </div>
             <div>
               <p className="text-stone-500 text-xs font-bold tracking-widest uppercase mb-1 mt-6">Socials</p>
@@ -72,12 +93,15 @@ export default function Contact() {
           transition={{ delay: 0.4 }}
           className="bg-stone-900/50 backdrop-blur-md p-8 md:p-12 rounded-2xl border border-stone-800"
         >
-          <form className="space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-6">
             <div className="space-y-2">
               <label htmlFor="name" className="text-xs font-semibold tracking-widest text-stone-400 uppercase block">Name</label>
               <input 
                 type="text" 
                 id="name" 
+                required
+                value={formData.name}
+                onChange={handleChange}
                 className="w-full bg-stone-800/50 border border-stone-700 rounded-lg px-4 py-3 text-[#FAF9F6] focus:outline-none focus:border-pink-400 transition-colors duration-300"
                 placeholder="John Doe"
               />
@@ -88,6 +112,9 @@ export default function Contact() {
               <input 
                 type="email" 
                 id="email" 
+                required
+                value={formData.email}
+                onChange={handleChange}
                 className="w-full bg-stone-800/50 border border-stone-700 rounded-lg px-4 py-3 text-[#FAF9F6] focus:outline-none focus:border-pink-400 transition-colors duration-300"
                 placeholder="john@example.com"
               />
@@ -98,14 +125,17 @@ export default function Contact() {
               <textarea 
                 id="message" 
                 rows="4"
+                required
+                value={formData.message}
+                onChange={handleChange}
                 className="w-full bg-stone-800/50 border border-stone-700 rounded-lg px-4 py-3 text-[#FAF9F6] focus:outline-none focus:border-pink-400 transition-colors duration-300 resize-none"
                 placeholder="Tell me about your project..."
               ></textarea>
             </div>
 
             <button 
-              type="button"
-              className="w-full bg-pink-400 text-stone-900 font-bold tracking-widest uppercase py-4 rounded-lg hover:bg-pink-300 transition-colors duration-300 mt-4"
+              type="submit"
+              className="w-full bg-pink-400 text-stone-900 font-bold tracking-widest uppercase py-4 rounded-lg hover:bg-pink-300 transition-colors duration-300 mt-4 cursor-pointer"
             >
               Send Message
             </button>

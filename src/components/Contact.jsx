@@ -51,14 +51,14 @@ export default function Contact() {
           >
             <div>
               <p className="text-stone-500 text-xs font-bold tracking-widest uppercase mb-1">Email</p>
-              <a href="mailto:hello@example.com" className="text-xl hover:text-pink-400 transition-colors duration-300">hello@example.com</a>
+              <a href="mailto:mariabdoh@gmail.com" className="text-xl hover:text-pink-400 transition-colors duration-300">hello@example.com</a>
             </div>
             <div>
               <p className="text-stone-500 text-xs font-bold tracking-widest uppercase mb-1 mt-6">Socials</p>
               <div className="flex gap-6 text-stone-300">
-                <a href="#" className="hover:text-pink-400 transition-colors duration-300">LinkedIn</a>
-                <a href="#" className="hover:text-pink-400 transition-colors duration-300">Twitter</a>
-                <a href="#" className="hover:text-pink-400 transition-colors duration-300">Dribbble</a>
+                <a href="#https://www.linkedin.com/in/mariamabba/" className="hover:text-pink-400 transition-colors duration-300">LinkedIn</a>
+                <a href="https://github.com/Mariaa888/" className="hover:text-pink-400 transition-colors duration-300">GitHub</a>
+                <a href="#https://www.behance.net/mariabdoh" className="hover:text-pink-400 transition-colors duration-300">Behance</a>
               </div>
             </div>
           </motion.div>

@@ -46,15 +46,15 @@ export const projects = [
   },
   { 
     id: 'factory-flow', 
-    name: 'FACTORY FLOW', 
-    desc: 'Factory Management System', 
+    name: 'LUMIÈRE', 
+    desc: 'Skin Care Brand Web Design', 
     color: '#A5C183', 
     mockups: 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=1200&q=80',
     number: '03',
-    fullDesc: 'Factory Flow is a comprehensive management system designed to optimize production lines and warehouse operations. It provides real-time data visualization and predictive analytics to improve efficiency and reduce downtime.',
-    tags: ['Dashboard', 'SaaS', 'Industrial'],
-    role: 'Lead UI/UX Designer',
-    tools: 'Figma',
+    fullDesc: 'LUMIÈRE is Skin Care Brand Web Design',
+    tags: ['UI/UX Design', 'Web Design', 'Skin Care Brand'],
+    role: 'Front End Developer',
+    tools: 'React ,Tailwind css',
     images: [
       'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=1200&q=80',
       'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200&q=80'

@@ -147,7 +147,7 @@ export default function CaseStudy() {
               className="w-full overflow-hidden rounded-sm shadow-xl"
             >
               <img
-                src={img}
+                src={img.startsWith('http') ? img : `${import.meta.env.BASE_URL.replace(/\/$/, '')}${img}`}
                 alt={`${project.name} preview ${idx + 1}`}
                 className="w-full h-auto object-cover"
               />

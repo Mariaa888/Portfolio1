@@ -76,19 +76,20 @@ const PortfolioHeader = () => {
             className="hidden md:flex items-center space-x-6"
           >
             <a
-              href="#"
-              className="group flex items-center space-x-2 text-xs font-semibold text-stone-400 hover:text-violet-500 transition-colors"
+              href={`${import.meta.env.BASE_URL}assets/Images/Mariam Abdulrahman Mohammed Badhib.pdf`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group"
             >
-              <span>Resume</span>
-              <ExternalLink className="h-3 w-3 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 opacity-50" />
+              <motion.button 
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="px-8 py-3 text-xs font-bold tracking-widest uppercase bg-yellow-400 text-stone-950 rounded-full hover:bg-stone-950 hover:text-white transition-all duration-500 shadow-sm shadow-yellow-400/20 cursor-pointer flex items-center gap-2"
+              >
+                <span>Resume</span>
+                <ExternalLink className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+              </motion.button>
             </a>
-            <motion.button 
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-8 py-3 text-xs font-bold tracking-widest uppercase bg-yellow-400 text-stone-950 rounded-full hover:bg-stone-950 hover:text-white transition-all duration-500 shadow-sm shadow-yellow-400/20"
-            >
-              Hire Me
-            </motion.button>
           </motion.div>
 
           {/* Mobile Menu Button */}
@@ -125,9 +126,17 @@ const PortfolioHeader = () => {
                     </motion.a>
                   ))}
                   <div className="pt-8 w-full flex flex-col space-y-4 items-center border-t border-stone-200">
-                    <button className="w-full py-4 text-center bg-yellow-400 text-stone-950 font-bold tracking-widest uppercase text-xs rounded-full">
-                      Hire Me
-                    </button>
+                    <a
+                      href={`${import.meta.env.BASE_URL}assets/Images/Mariam Abdulrahman Mohammed Badhib.pdf`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full"
+                    >
+                      <button className="w-full py-4 text-center bg-yellow-400 text-stone-950 font-bold tracking-widest uppercase text-xs rounded-full cursor-pointer flex items-center justify-center gap-2">
+                        <span>Resume</span>
+                        <ExternalLink className="h-4 w-4" />
+                      </button>
+                    </a>
                   </div>
                 </div>
               </div>

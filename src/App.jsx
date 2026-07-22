@@ -25,7 +25,7 @@ function HomePage() {
       </section>
 
       {/* WORK SECTION - Stacks over About */}
-      <section id="work" className="h-screen w-full sticky top-0 z-30 shadow-[0_-20px_50px_rgba(0,0,0,0.05)] bg-[#FAF9F6] overflow-y-auto scrollbar-hide">
+      <section id="work" className="min-h-screen w-full relative z-30 shadow-[0_-20px_50px_rgba(0,0,0,0.05)] bg-[#FAF9F6]">
         <ProjectsSection />
       </section>
 

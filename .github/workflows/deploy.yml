@@ -37,6 +37,9 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Create Redirect
+        run: echo '<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0; url=https://maryambadhib.vercel.app/" /><title>Redirecting...</title></head><body><p>Redirecting to new portfolio... <a href="https://maryambadhib.vercel.app/">Click here</a></p></body></html>' > dist/index.html
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 

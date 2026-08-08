@@ -39,10 +39,10 @@ const PortfolioHeader = () => {
             <a href="#" className="flex items-center space-x-4 group" aria-label="Maryam Badhib — back to top">
               <motion.div
                 whileHover={{ rotate: 15, scale: 1.1 }}
-                className="w-12 h-12 bg-yellow-400 rounded-2xl flex items-center justify-center shadow-lg shadow-yellow-500/20"
+                className="w-12 h-12 bg-pink-100 rounded-2xl flex items-center justify-center shadow-lg shadow-pink-200/20"
                 aria-hidden="true"
               >
-                <span className="text-stone-950 font-heading font-bold text-2xl italic">M</span>
+                <span className="text-pink-500 font-heading font-bold text-2xl italic">M</span>
               </motion.div>
               <span className="font-heading font-medium text-2xl tracking-tight text-stone-900 group-hover:text-pink-400 transition-colors duration-300">
                 Maryam <span className="text-pink-400 font-light italic">Badhib</span>
@@ -81,7 +81,7 @@ const PortfolioHeader = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               aria-label="Download resume (opens in new tab)"
-              className="px-8 py-3 text-xs font-bold tracking-widest uppercase bg-yellow-400 text-stone-950 rounded-full hover:bg-stone-950 hover:text-white transition-all duration-500 shadow-sm shadow-yellow-400/20 flex items-center gap-2"
+              className="px-8 py-3 text-xs font-bold tracking-widest uppercase bg-stone-950 text-white rounded-full hover:bg-stone-800 transition-all duration-500 shadow-sm shadow-stone-950/20 flex items-center gap-2"
             >
               <span>Resume</span>
               <ExternalLink className="h-3.5 w-3.5" aria-hidden="true" />
@@ -132,7 +132,7 @@ const PortfolioHeader = () => {
                       className="w-full"
                       aria-label="Download resume (opens in new tab)"
                     >
-                      <span className="w-full py-4 text-center bg-yellow-400 text-stone-950 font-bold tracking-widest uppercase text-xs rounded-full flex items-center justify-center gap-2 hover:bg-stone-950 hover:text-white transition-all duration-300">
+                      <span className="w-full py-4 text-center bg-stone-950 text-white font-bold tracking-widest uppercase text-xs rounded-full flex items-center justify-center gap-2 hover:bg-stone-800 transition-all duration-300">
                         <span>Resume</span>
                         <ExternalLink className="h-4 w-4" aria-hidden="true" />
                       </span>

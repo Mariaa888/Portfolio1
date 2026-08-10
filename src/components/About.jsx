@@ -41,7 +41,7 @@ export default function About() {
             <p className="text-xl md:text-2xl text-stone-800 font-light leading-relaxed">
               I am{' '}
               <span className="font-semibold text-stone-950 underline decoration-pink-400 decoration-4 underline-offset-4">
-                Maryam Badhib
+                Mariam Badhib
               </span>
               , a{' '}
               <span className="font-medium text-stone-900"> UI/UX Designer</span>{' '}

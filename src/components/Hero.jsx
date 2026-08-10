@@ -46,7 +46,7 @@ export default function Hero() {
             transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
             className="text-6xl md:text-8xl lg:text-9xl font-heading font-normal tracking-tight text-stone-950 px-4"
           >
-            Maryam <span className="italic font-light text-pink-400">Badhib</span>
+            Mariam <span className="italic font-light text-pink-400">Badhib</span>
           </motion.h1>
 
           {/* Description */}

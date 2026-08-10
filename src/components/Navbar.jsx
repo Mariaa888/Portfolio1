@@ -38,14 +38,18 @@ const PortfolioHeader = () => {
           >
             <a href="#" className="flex items-center space-x-4 group" aria-label="Maryam Badhib — back to top">
               <motion.div
-                whileHover={{ rotate: 15, scale: 1.1 }}
-                className="w-12 h-12 bg-pink-100 rounded-2xl flex items-center justify-center shadow-lg shadow-pink-200/20"
+                whileHover={{ rotate: 5, scale: 1.05 }}
+                className="w-16 h-16 rounded-2xl flex items-center justify-center overflow-hidden shadow-lg shadow-pink-200/20 bg-transparent"
                 aria-hidden="true"
               >
-                <span className="text-pink-500 font-heading font-bold text-2xl italic">M</span>
+                <img 
+                  src={`${import.meta.env.BASE_URL}assets/Images/logo.png`} 
+                  alt="Logo" 
+                  className="w-full h-full object-contain drop-shadow-sm"
+                />
               </motion.div>
               <span className="font-heading font-medium text-2xl tracking-tight text-stone-900 group-hover:text-pink-400 transition-colors duration-300">
-                Maryam <span className="text-pink-400 font-light italic">Badhib</span>
+                 By <span className="text-pink-400 font-light italic">Mariam</span> Badhib
               </span>
             </a>
           </motion.div>

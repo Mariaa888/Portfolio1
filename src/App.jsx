@@ -36,13 +36,11 @@ function HomePage() {
     </main>
   );
 }
-
 function AppContent() {
   const location = useLocation();
 
   return (
-    <div className="min-h-screen bg-[#FAF9F6] text-stone-900 font-['Outfit',sans-serif] selection:bg-yellow-400/30">
-      {/* Show Navbar only on Home Page or handle it inside CaseStudy if needed */}
+    <div className="min-h-screen bg-[#FAF9F6] text-stone-900 font-['Outfit',sans-serif]">
       {location.pathname === '/' && <Navbar />}
 
       <div className="fixed inset-0 pointer-events-none opacity-[0.03] z-[100] bg-[url('https://www.transparenttextures.com/patterns/pinstripe-light.png')]" />
@@ -56,7 +54,6 @@ function AppContent() {
     </div>
   );
 }
-
 export default function App() {
   return (
     <Router basename={import.meta.env.BASE_URL}>

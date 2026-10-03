@@ -39,7 +39,7 @@ const PortfolioHeader = () => {
             <a href="#" className="flex items-center space-x-4 group" aria-label="Maryam Badhib — back to top">
               <motion.div
                 whileHover={{ rotate: 5, scale: 1.05 }}
-                className="w-16 h-16 rounded-2xl flex items-center justify-center overflow-hidden shadow-lg shadow-pink-200/20 bg-transparent"
+                className="w-14 h-14 md:w-16 md:h-16 rounded-2xl flex items-center justify-center overflow-hidden shadow-lg shadow-pink-200/20 bg-transparent"
                 aria-hidden="true"
               >
                 <img 
@@ -48,8 +48,8 @@ const PortfolioHeader = () => {
                   className="w-full h-full object-contain drop-shadow-sm"
                 />
               </motion.div>
-              <span className="font-heading font-medium text-2xl tracking-tight text-stone-900 group-hover:text-pink-400 transition-colors duration-300">
-                 By <span className="text-pink-400 font-light italic">Mariam</span> Badhib
+              <span className="font-medium text-xl md:text-2xl tracking-tight text-stone-900 group-hover:text-pink-400 transition-colors duration-300">
+                By <span className="text-pink-400 font-light italic">Mariam</span> Badhib
               </span>
             </a>
           </motion.div>
@@ -64,7 +64,7 @@ const PortfolioHeader = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.1 }}
                 whileHover={{ scale: 1.05, y: -2 }}
-                className="text-xs font-semibold tracking-widest uppercase text-stone-500 hover:text-pink-400 transition-all duration-300 relative group"
+                className="text-xs font-semibold tracking-[0.2em] uppercase text-stone-500 hover:text-pink-400 transition-all duration-300 relative group"
               >
                 {link.text}
                 <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-0 h-1 bg-pink-400/30 transition-all duration-300 group-hover:w-full rounded-full" />
@@ -96,7 +96,7 @@ const PortfolioHeader = () => {
           <motion.button
             whileTap={{ scale: 0.9 }}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-3 text-stone-900 hover:bg-yellow-400/10 rounded-2xl transition-all"
+            className="md:hidden p-3 text-stone-900 hover:bg-stone-100 rounded-2xl transition-all"
             aria-label={isMenuOpen ? "Close navigation menu" : "Open navigation menu"}
             aria-expanded={isMenuOpen}
             aria-controls="mobile-menu"
@@ -115,20 +115,21 @@ const PortfolioHeader = () => {
               exit={{ opacity: 0, height: 0 }}
               className="md:hidden overflow-hidden mt-6"
             >
-              <div className="py-8 px-4 rounded-[2rem] bg-stone-50/90 backdrop-blur-2xl border border-stone-200">
+              <div className="py-8 px-6 rounded-[2rem] bg-stone-50/95 backdrop-blur-2xl border border-stone-200/80 shadow-xl">
                 <nav className="flex flex-col space-y-6 items-center" aria-label="Mobile navigation">
                   {navLinks.map((link) => (
                     <motion.a
                       key={link.text}
                       href={link.href}
-                      whileHover={{ scale: 1.1, x: 10 }}
+                      whileHover={{ scale: 1.05 }}
                       onClick={() => setIsMenuOpen(false)}
-                      className="text-xl font-heading italic text-stone-600 hover:text-pink-400 transition-colors"
+                      className="text-sm font-semibold tracking-[0.2em] uppercase text-stone-600 hover:text-pink-400 transition-colors"
                     >
                       {link.text}
                     </motion.a>
                   ))}
-                  <div className="pt-8 w-full flex flex-col items-center border-t border-stone-200">
+                  
+                  <div className="pt-6 w-full flex flex-col items-center border-t border-stone-200">
                     <a
                       href={`${import.meta.env.BASE_URL}assets/Images/Mariam Abdulrahman Mohammed Badhib.pdf`}
                       target="_blank"
@@ -136,7 +137,7 @@ const PortfolioHeader = () => {
                       className="w-full"
                       aria-label="Download resume (opens in new tab)"
                     >
-                      <span className="w-full py-4 text-center bg-stone-950 text-white font-bold tracking-widest uppercase text-xs rounded-full flex items-center justify-center gap-2 hover:bg-stone-800 transition-all duration-300">
+                      <span className="w-full py-3.5 text-center bg-stone-950 text-white font-bold tracking-widest uppercase text-xs rounded-full flex items-center justify-center gap-2 hover:bg-stone-800 transition-all duration-300">
                         <span>Resume</span>
                         <ExternalLink className="h-4 w-4" aria-hidden="true" />
                       </span>

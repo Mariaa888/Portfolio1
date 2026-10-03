@@ -28,7 +28,7 @@ export default function CaseStudy() {
           <h2 className="text-2xl font-bold mb-4">Project not found</h2>
           <button
             onClick={() => navigate('/')}
-            className="text-pink-400 hover:underline"
+            className="text-[#eb4799] hover:underline"
           >
             Go back home
           </button>
@@ -47,7 +47,7 @@ export default function CaseStudy() {
     >
       {/* Scroll Progress Bar */}
       <motion.div
-        className="fixed top-0 left-0 right-0 h-1.5 bg-pink-400 origin-left z-[100]"
+        className="fixed top-0 left-0 right-0 h-1.5 bg-[#eb4799] origin-left z-[100]"
         style={{ scaleX }}
         aria-hidden="true"
       />
@@ -83,7 +83,7 @@ export default function CaseStudy() {
           transition={{ delay: 0.2, duration: 0.8, ease: "easeOut" }}
           className="relative z-10 text-center px-4 max-w-4xl"
         >
-          <span className="text-pink-300 text-xs font-bold tracking-[0.4em] uppercase mb-4 block" aria-hidden="true">
+          <span className="text-[#eb4799] text-xs font-bold tracking-[0.4em] uppercase mb-4 block" aria-hidden="true">
             Project {project.number}
           </span>
           <h1 id="project-title" className="text-6xl md:text-8xl lg:text-9xl font-black text-white leading-tight mb-6 tracking-tight">
@@ -111,7 +111,7 @@ export default function CaseStudy() {
           className="bg-white p-8 md:p-16 lg:p-20 shadow-2xl rounded-2xl grid grid-cols-1 lg:grid-cols-3 gap-12 border border-stone-100"
         >
           <div className="lg:col-span-2 space-y-8">
-            <h2 className="text-3xl font-bold text-stone-900 italic font-serif">Project Overview</h2>
+            <h2 className="text-3xl font-bold text-stone-900 italic">Project Overview</h2>
             <p className="text-stone-600 text-lg leading-relaxed mb-12">
               {project.fullDesc}
             </p>
@@ -119,8 +119,8 @@ export default function CaseStudy() {
             {/* Dynamic Case Study Sections */}
             {project.sections && project.sections.map((section, idx) => (
               <div key={idx} className="mt-12 space-y-4">
-                <h3 className="text-2xl font-bold text-stone-900 italic font-serif">{section.title}</h3>
-                <p className="text-stone-600 text-lg leading-relaxed whitespace-pre-wrap bg-pink-50/50 p-6 rounded-xl border border-pink-100">
+                <h3 className="text-2xl font-bold text-stone-900 italic">{section.title}</h3>
+                <p className="text-stone-600 text-lg leading-relaxed whitespace-pre-wrap bg-[#eb4799]/10 p-6 rounded-xl border border-[#eb4799]/10">
                   {section.content}
                 </p>
               </div>
@@ -128,15 +128,15 @@ export default function CaseStudy() {
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-12 border-t border-stone-100 mt-12">
               <div>
-                <h3 className="text-xs font-black tracking-widest text-pink-500 uppercase mb-3">Role</h3>
+                <h3 className="text-xs font-black tracking-widest text-[#eb4799] uppercase mb-3">Role</h3>
                 <p className="text-stone-900 font-bold text-sm">{project.role}</p>
               </div>
               <div>
-                <h3 className="text-xs font-black tracking-widest text-pink-500 uppercase mb-3">Tools</h3>
+                <h3 className="text-xs font-black tracking-widest text-[#eb4799] uppercase mb-3">Tools</h3>
                 <p className="text-stone-900 font-bold text-sm">{project.tools}</p>
               </div>
               <div>
-                <h3 className="text-xs font-black tracking-widest text-pink-500 uppercase mb-3">Services</h3>
+                <h3 className="text-xs font-black tracking-widest text-[#eb4799] uppercase mb-3">Services</h3>
                 <ul className="space-y-1 text-sm">
                   {project.tags.map(tag => (
                     <li key={tag} className="text-stone-900 font-bold">{tag}</li>
@@ -155,7 +155,7 @@ export default function CaseStudy() {
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full py-4 bg-stone-900 text-white font-bold flex items-center justify-center gap-2 hover:bg-pink-500 transition-all duration-300 text-sm tracking-widest uppercase rounded-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-500 shadow-md"
+                    className="w-full py-4 bg-stone-900 text-white font-bold flex items-center justify-center gap-2 hover:bg-[#eb4799] transition-all duration-300 text-sm tracking-widest uppercase rounded-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#eb4799] shadow-md"
                     aria-label={`Launch ${project.name} live project (opens in new tab)`}
                   >
                     Launch Project <ExternalLink size={16} aria-hidden="true" />
@@ -218,13 +218,13 @@ export default function CaseStudy() {
 
       {/* Footer / Contact */}
       <section className="mt-32 mb-10 text-center px-6" aria-labelledby="cta-heading">
-        <h2 id="cta-heading" className="text-4xl md:text-5xl lg:text-6xl font-black mb-8 italic font-serif text-stone-900">
+        <h2 id="cta-heading" className="text-4xl md:text-5xl lg:text-6xl font-black mb-8 italic text-stone-900">
           Have a project in mind?
         </h2>
         {/* Fixed broken CTA - now points to email */}
         <a 
           href="mailto:mariabdoh@gmail.com" 
-          className="inline-block text-2xl md:text-3xl font-black border-b-4 border-pink-400 pb-2 text-stone-900 hover:text-pink-500 hover:border-pink-500 transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-pink-200 rounded-sm"
+          className="inline-block text-2xl md:text-3xl font-black border-b-4 border-[#eb4799] pb-2 text-stone-900 hover:text-[#eb4799] hover:border-[#eb4799] transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#eb4799] rounded-sm"
         >
           Let's work together
         </a>

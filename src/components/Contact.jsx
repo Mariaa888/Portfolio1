@@ -26,7 +26,7 @@ export default function Contact() {
   return (
     <div className="min-h-screen bg-[#1A1A1A] text-[#FAF9F6] flex flex-col justify-center px-4 py-16 md:px-12 lg:px-24 relative overflow-hidden">
       {/* Decorative Elements */}
-      <div className="absolute top-0 right-0 w-64 h-64 bg-pink-400/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+      <div className="absolute top-0 right-0 w-64 h-64 bg-[#eb4799]/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-yellow-400/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
 
       <div className="max-w-6xl w-full mx-auto z-10 grid grid-cols-1 lg:grid-cols-2 gap-16">
@@ -38,7 +38,7 @@ export default function Contact() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-pink-400 text-xs font-semibold tracking-[0.3em] uppercase mb-4 block"
+              className="text-[#eb4799] text-md font-semibold tracking-[0.3em] uppercase mb-4 block"
             >
               Get In Touch
             </motion.span>
@@ -47,10 +47,10 @@ export default function Contact() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-5xl md:text-7xl font-light leading-tight mb-6"
+              className="text-5xl md:text-7xl font-bold leading-tight mb-6"
             >
               Let's build something <br />
-              <span className="italic text-pink-400 font-serif">extraordinary.</span>
+              <span className="italic text-[#eb4799]">extraordinary.</span>
             </motion.h2>
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
@@ -72,16 +72,20 @@ export default function Contact() {
           >
             <div>
               <p className="text-stone-500 text-xs font-bold tracking-widest uppercase mb-1">Email</p>
-              <a href="mailto:mariabdoh@gmail.com" className="text-xl hover:text-pink-400 transition-colors duration-300">mariabdoh@gmail.com</a>
+              <a href="mailto:mariabdoh@gmail.com" className="text-xl hover:text-[#eb4799] transition-colors duration-300">mariabdoh@gmail.com</a>
+            </div>
+            <div>
+              <p className="text-stone-500 text-xs font-bold tracking-widest uppercase mb-1 mt-6">Location</p>
+              <p className="text-xl">Aden, Yemen</p>
             </div>
             <div>
               <p className="text-stone-500 text-xs font-bold tracking-widest uppercase mb-1 mt-6">Socials</p>
               <div className="flex flex-wrap gap-6 text-stone-300">
-                <a href="https://www.linkedin.com/in/mariamabba/" className="hover:text-pink-400 transition-colors duration-300">LinkedIn</a>
-                <a href="https://github.com/Mariaa888/" className="hover:text-pink-400 transition-colors duration-300">GitHub</a>
-                <a href="https://www.behance.net/mariabdoh" className="hover:text-pink-400 transition-colors duration-300">Behance</a>
-                <a href="https://www.instagram.com/bymariambadhib" className="hover:text-pink-400 transition-colors duration-300">Instagram</a>
-                <a href="https://www.tiktok.com/@bymariambadhib" className="hover:text-pink-400 transition-colors duration-300">TikTok</a>
+                <a href="https://www.linkedin.com/in/mariamabba/" className="hover:text-[#eb4799] transition-colors duration-300">LinkedIn</a>
+                <a href="https://github.com/Mariaa888/" className="hover:text-[#eb4799] transition-colors duration-300">GitHub</a>
+                <a href="https://www.behance.net/mariabdoh" className="hover:text-[#eb4799] transition-colors duration-300">Behance</a>
+                <a href="https://www.instagram.com/bymariambadhib" className="hover:text-[#eb4799] transition-colors duration-300">Instagram</a>
+                <a href="https://www.tiktok.com/@bymariambadhib" className="hover:text-[#eb4799] transition-colors duration-300">TikTok</a>
               </div>
             </div>
           </motion.div>
@@ -104,7 +108,7 @@ export default function Contact() {
                 required
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full bg-stone-800/50 border border-stone-700 rounded-lg px-4 py-3 text-[#FAF9F6] focus:outline-none focus:border-pink-400 transition-colors duration-300"
+                className="w-full bg-stone-800/50 border border-stone-700 rounded-lg px-4 py-3 text-[#FAF9F6] focus:outline-none focus:border-[#eb4799] transition-colors duration-300"
                 placeholder="John Doe"
               />
             </div>
@@ -117,7 +121,7 @@ export default function Contact() {
                 required
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full bg-stone-800/50 border border-stone-700 rounded-lg px-4 py-3 text-[#FAF9F6] focus:outline-none focus:border-pink-400 transition-colors duration-300"
+                className="w-full bg-stone-800/50 border border-stone-700 rounded-lg px-4 py-3 text-[#FAF9F6] focus:outline-none focus:border-[#eb4799] transition-colors duration-300"
                 placeholder="john@example.com"
               />
             </div>
@@ -130,14 +134,14 @@ export default function Contact() {
                 required
                 value={formData.message}
                 onChange={handleChange}
-                className="w-full bg-stone-800/50 border border-stone-700 rounded-lg px-4 py-3 text-[#FAF9F6] focus:outline-none focus:border-pink-400 transition-colors duration-300 resize-none"
+                className="w-full bg-stone-800/50 border border-stone-700 rounded-lg px-4 py-3 text-[#FAF9F6] focus:outline-none focus:border-[#eb4799] transition-colors duration-300 resize-none"
                 placeholder="Tell me about your project..."
               ></textarea>
             </div>
 
             <button 
               type="submit"
-              className="w-full bg-pink-400 text-stone-900 font-bold tracking-widest uppercase py-4 rounded-lg hover:bg-pink-300 transition-colors duration-300 mt-4 cursor-pointer"
+              className="w-full bg-[#eb4799] text-stone-900 font-bold tracking-widest uppercase py-4 rounded-lg hover:bg-[#eb4799] transition-colors duration-300 mt-4 cursor-pointer"
             >
               Send Message
             </button>

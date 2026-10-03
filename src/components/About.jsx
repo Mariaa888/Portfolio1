@@ -27,7 +27,7 @@ export default function About() {
 
           <h2 id="about-heading" className="text-4xl md:text-6xl lg:text-7xl font-bold text-stone-950 tracking-tight leading-[1.15]">
             Designing pretty things, <br />
-            coding them into <span className="italic font-light text-[#eb4799]">reality.</span>
+            coding them into <span className="italic font-bold text-[#eb4799]">Reality.</span>
           </h2>
 
           <p className="text-xl md:text-2xl text-stone-800 font-light leading-relaxed pt-2">
@@ -48,7 +48,7 @@ export default function About() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="flex flex-col gap-8 pt-8 border-t border-stone-200/80"
         >
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-center">
             <h3 className="text-stone-900 font-bold text-2xl uppercase flex items-center text-center">
               What I Do
             </h3>

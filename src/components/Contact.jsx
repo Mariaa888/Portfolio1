@@ -50,7 +50,7 @@ export default function Contact() {
               className="text-5xl md:text-7xl font-bold leading-tight mb-6"
             >
               Let's build something <br />
-              <span className="italic text-[#eb4799]">extraordinary.</span>
+              <span className="italic font-bold text-[#eb4799]">extraordinary.</span>
             </motion.h2>
             <motion.p 
               initial={{ opacity: 0, y: 20 }}

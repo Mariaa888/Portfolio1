@@ -72,9 +72,9 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
-              className="text-6xl md:text-8xl lg:text-9xl font-normal tracking-tight text-stone-950 px-4 leading-none"
+              className="text-4xl md:text-8xl lg:text-9xl font-normal tracking-tight text-stone-950 px-4 leading-none font-bold"
             >
-              Mariam <span className="font-light text-[#eb4799]">Badhib</span>
+              Mariam <span className="font-bold text-[#eb4799]">Badhib</span>
             </motion.h1>
           </div>
 

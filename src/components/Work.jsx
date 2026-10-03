@@ -29,9 +29,9 @@ export default function ProjectsSection() {
         >
           My Work
         </span>
-        <h2 id="work-heading" className="text-4xl md:text-7xl leading-tight font-bold">
+        <h2 id="work-heading" className="text-2xl md:text-7xl leading-tight font-bold">
           Crafting digital stories, <br />
-          shaping them into <span className="italic text-[#eb4799]">experiences.</span>
+          shaping them into <span className="italic font-bold text-[#eb4799]">Experiences.</span>
         </h2>
       </div>
 
